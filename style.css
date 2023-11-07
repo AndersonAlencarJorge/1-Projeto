@@ -31,7 +31,9 @@ body * {
   color: var(--text-color);
 }
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
+  /*min-width: ; */
   /*border: 1px solid gray;*/
   margin: 56px auto 0px; /* top, right, down, left*/
   padding: 0 24px;
