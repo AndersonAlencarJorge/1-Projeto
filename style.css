@@ -76,12 +76,19 @@ body * {
   z-index: 4;
   /* técnica de alinhamento de objeto utilizando eixo y*/
   transform: translateY(-50%);
+
+  animation: slide-back 1s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  /*right: 0;
+  left: initial;*/
+  animation: slide-in 1s forwards;
 }
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 #switch span {
   display: block;
   width: 64px;
@@ -157,6 +164,7 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
 /* media queries */
 @media (min-width: 700px) {
   :root {
@@ -164,5 +172,22 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+/* animations */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
   }
 }
