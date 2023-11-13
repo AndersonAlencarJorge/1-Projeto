@@ -33,6 +33,7 @@ body * {
 }
 #container {
   width: auto;
+  height: auto;
   max-width: 588px; /* Tamanho máximo do desktop visualido através do figma
   /*min-width: ; */
   /*border: 1px solid gray;*/
