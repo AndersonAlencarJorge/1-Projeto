@@ -24,7 +24,7 @@
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: auto; /* unidade vh: significa viewport height*/
+  height: 700vh; /* unidade vh: significa viewport height*/
 }
 
 body * {
