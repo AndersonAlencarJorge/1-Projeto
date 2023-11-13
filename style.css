@@ -24,7 +24,7 @@
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh; /* unidade vh: significa viewport height*/
+  height: auto; /* unidade vh: significa viewport height*/
 }
 
 body * {
@@ -166,21 +166,12 @@ footer {
 }
 
 /* media queries */
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
-  }
-}
-@media (min-height: 100%) {
-  :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
-  }
-  .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
-  }
   }
 }
 /* animations */
