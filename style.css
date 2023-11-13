@@ -32,7 +32,7 @@ body * {
   color: var(--text-color);
 }
 #container {
-  width: 70%;
+  width: auto;
   max-width: 588px; /* Tamanho máximo do desktop visualido através do figma
   /*min-width: ; */
   /*border: 1px solid gray;*/
