@@ -21,10 +21,11 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --color-text-curriculum
 }
 body {
-  background: var(--bg-url) no-repeat top center/cover;
-  height: 700vh; /* unidade vh: significa viewport height*/
+  background: var(--bg-url) no-repeat top center/ cover;
+  height: auto; /* unidade vh: significa viewport height*/
 }
 
 body * {
@@ -48,7 +49,7 @@ body * {
 
 #profile img {
   width: 200px;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 #profile p {
@@ -63,6 +64,7 @@ body * {
   width: 64px;
   margin: 4px auto;
 }
+
 #switch button {
   width: 32px;
   height: 32px;
@@ -98,6 +100,17 @@ body * {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+}
+/* Texto para pagina curriculo.html*/
+#text p {
+  color: darkblue;
+  text-align: center;
+  font-weight: 700;  
+}
+.light #texp p{
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 700;  
 }
 /*links*/
 ul {
