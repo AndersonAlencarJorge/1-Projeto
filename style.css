@@ -33,7 +33,6 @@ body * {
 }
 #container {
   width: 100%;
-  height: 100%;
   max-width: 588px; /* Tamanho máximo do desktop visualido através do figma
   /*min-width: ; */
   /*border: 1px solid gray;*/
@@ -173,6 +172,15 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+@media (min-height: 100%) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
   }
 }
 /* animations */
