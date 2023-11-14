@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IR=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senha de Acesso</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img 
+          src="./assets/FOTO-Selfie1.png" 
+          alt="Foto de Anderson" />
+          <div id="switch" onclick="toggleMode()"> 
+        <button>    </button>
+        <span>      </span>
+        </div> <br>
+        <p>Insira Login e Senha</p><br>
+        <!-- Tipo Texto -->
+        <form action="" method="">
+          <label for="primeironome" >Nome</label>
+          <input type="text" name="primeironome" placeholder="Ex. anderson"/><br>
+          <!-- Tipo Senha -->
+          <label for="password">Senha</label>
+          <input type="password" name="password" id=""><br>
+         <!-- Tipo Email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="anderson@dev.com.br" id="">
+          <br></br>
+           <!-- Forma de Submeter -->
+          <!-- <input type="submit" value="Enviar"> -->
+          <button type="submit">Entrar</button><br><br>
+          <p>Qual a sua linguagem favorita?</p><br>
+           <!-- Nessa situação, se eu não inserir um valor nos nomes, todos os checkbox podem ser selecionados, se eu inserir o mesmo valor em "name", 'somente 1 checkbox pode ser selecionado'--> 
+          <input type="radio" name="X" id="" value="JavaScript" checked>JavaScript 
+          <input type="radio" name="X" id="" value="Python" >Python
+          <input type="radio" name="X" id="" value="Java">Java
+          <br>
+          <p>Mais de uma linguagem de programação?</p><br>
+          <input type="checkbox" name="a" id="" value="JavaScript">JavaScript 
+          <input type="checkbox" name="a" id="" value="Python">Python
+          <input type="checkbox" name="" id="" value="Java">Java
+          <br><br>
+          <p>Descreva aqui outras linguagens de programação que você trabalha</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea><br>
+          <button type="submit" value="aqui o backend recebe informacao">Enviar</button>
+          <br><br>
+          <!--Select Inputs-->
+          <select name="linguagem" id="">
+            <option value="">Selecione</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+          </select>
+        </form>
+       </div>
+      
+    </div>
+    
+    <footer>Desenvolvido por <a href="htts://logo-linkedin">Anderson Alencar Jorge</footer></a>
+  
+</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+  

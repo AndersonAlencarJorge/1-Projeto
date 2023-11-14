@@ -1,7 +1,7 @@
 function toggleMode() {
   //alert("Mudando para Fundo Branco")
   const html = document.documentElement
-  /* Esse código pode ser trocado pelo código abaixo por já existe a função na classlit
+  /* Esse código pode ser trocado pelo código abaixo por já existe a função na classlist
   if (html.classList.contains(`light`)) {
     html.classList.remove(`light`)
   } else {
