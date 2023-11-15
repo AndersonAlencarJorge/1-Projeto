@@ -23,6 +23,7 @@
   --switch-bg-url: url(./assets/sun.svg);
   --color-text-curriculum
   }
+
 body {
   background: var(--bg-url) no-repeat top center/cover;
   /* height: 700vh; unidade vh: significa viewport height */
@@ -35,7 +36,7 @@ body * {
 }
 #container {
   width: 100%;
-  max-width: 400px; /* Tamanho máximo do desktop visualido através do figma
+  max-width: 300px; /* Tamanho máximo do desktop visualido através do figma
   /*min-width: ; */
   /*border: 1px solid gray;*/
   margin: 56px auto 0px; /* top, right, down, left*/
