@@ -25,7 +25,7 @@
   }
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 700vh; /* unidade vh: significa viewport height */
+  /* height: 700vh; unidade vh: significa viewport height */
   /* width: 450px; */
   }
 
@@ -35,7 +35,7 @@ body * {
 }
 #container {
   width: 100%;
-  max-width: 588px; /* Tamanho máximo do desktop visualido através do figma
+  max-width: 400px; /* Tamanho máximo do desktop visualido através do figma
   /*min-width: ; */
   /*border: 1px solid gray;*/
   margin: 56px auto 0px; /* top, right, down, left*/
