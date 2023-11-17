@@ -13,9 +13,18 @@ function toggleMode() {
   // Substituir a imagem
   if (html.classList.contains(`light`)) {
     // Se tiver light mode, adicionar a imagem light
-    img.setAttribute(`scr`, `./assets/avatar.png`)
+    img.setAttribute("scr", "./assets/avatar.png")
     // Se tiver sem light mode, manter a imagem normal
   } else {
-    img.setAttribute(`scr`, `./assets/Foto-Selfie.png`)
+    img.setAttribute("scr", "./Foto-Selfie1.png")
+  }
+
+  const img - document.querySelector("img") {
+    fetch("link api")
+    .then(async res = {
+      if(!res.ok) {
+        throw new console.error(res.status);
+      }
+    })
   }
 }

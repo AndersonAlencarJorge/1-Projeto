@@ -11,6 +11,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+
 }
 
 .light {
@@ -21,21 +22,21 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
-  --color-text-curriculum
-  }
+  --color-text-curriculum: rgba(0, 0, 0, 0.1);
+}
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
   /* height: 700vh; unidade vh: significa viewport height */
   /* width: 450px; */
-  }
+}
 
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 #container {
-  width: auto;
+  width: auto; /*se eu utilizar aqui 100%, em mobile distorce o background*/
   max-width: 588px; /* Tamanho máximo do desktop visualido através do figma
   /*min-width: ; */
   /*border: 1px solid gray;*/
@@ -107,12 +108,12 @@ body * {
 #text p {
   color: darkblue;
   text-align: center;
-  font-weight: 700;  
+  font-weight: 700;
 }
-.light #texp p{
+.light #texp p {
   color: whitesmoke;
   text-align: center;
-  font-weight: 700;  
+  font-weight: 700;
 }
 /*links*/
 ul {
