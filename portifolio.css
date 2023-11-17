@@ -1,0 +1,225 @@
+* {
+  margin: 0.1px;
+  padding: 0;
+}
+:root {
+  /*pegando do <html> (class) declaração de variável*/
+  --text-color: white; /* definindo nome --text-color como branco */
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+  --color-text-curriculum: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  /* height: 700vh; unidade vh: significa viewport height */
+  /* width: 450px; */
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+#container {
+  width: auto; /*se eu utilizar aqui 100%, em mobile distorce o background*/
+  max-width: 588px; /* Tamanho máximo do desktop visualido através do figma
+  /*min-width: ; */
+  /*border: 1px solid gray;*/
+  margin: 56px auto 0px; /* top, right, down, left*/
+  padding: 0 24px;
+}
+/* PROFILE*/
+#profile {
+  /*border: 1px solid blueviolet; */
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 200px;
+  border-radius: 20%;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+/* SWITCH*/
+#switch {
+  /* border: 1px solid red; /*so para identificar onde está o botão e sua centralização*/
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  /* alinhamento do botão em relacão ao retangulo*/
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 4;
+  /* técnica de alinhamento de objeto utilizando eixo y*/
+  transform: translateY(-50%);
+
+  animation: slide-back 1s;
+}
+
+.light #switch button {
+  /*right: 0;
+  left: initial;*/
+  animation: slide-in 1s forwards;
+}
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color-);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+/* Texto para pagina curriculo.html*/
+#text p {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 700;
+}
+.light #texp p {
+  color: darkblue;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*links*/
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+ul li a {
+  /*border: 1px solid gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 16px 24px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+/* pseudo-selector */
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--text-color);
+}
+
+#course-list h2{
+  list-style-type: decimal;
+  padding: 10;
+  color: white;
+  padding: 5px;
+  /* padding-bottom: 5px; */
+}
+
+#course-list p{
+  list-style-type: decimal;
+  padding: 10;
+  color: white;
+  /* padding: 2px; */
+  /* padding-bottom: 10px; */
+  margin: 10px;
+}
+/*social-links*/
+#social-links {
+  display: flex;
+  justify-content: center;
+
+  padding: 24px 0;
+
+  font-size: 24px;
+}
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+
+  border-radius: 100%;
+}
+#social-links a:hover {
+  background-color: var(--highlight-color);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+/* animations */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
+}
